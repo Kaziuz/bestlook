@@ -130,10 +130,10 @@ body {
 .header__right {
   width: 40%;
   position: relative;
-  top: 1rem;
+  top: -3rem;
   /* border: 1px solid black; */
-  right: 8rem;
-  transform: scale(0.6);
+  right: 5rem;
+  transform: scale(0.8);
 }
 
 .header__right__image {
