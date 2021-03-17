@@ -178,14 +178,16 @@ body {
 .header__button:link,
 .header__button:visited {
   width: 67%;
-  height: 5.2rem;
+  height: 4.3rem;
   padding: .4rem 0;
   background-color: var(--main-green);
   border-radius: 3.2rem;
-  border: 1px solid var(--main-green);
+  border: 1px solid var(
+  --main-green);
   text-align: center;
   color: white;
-  font-family: 'futura-medium', Arial, Helvetica, sans-serif;
+  font-family:
+  'futura-medium', Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-style: normal;
   letter-spacing: 0.058rem;
@@ -370,7 +372,7 @@ body {
 
 .shopping {
   width: 77%;
-  height: 38rem;
+  height: 40rem;
   margin-left: var(--margin-left-rule);
   margin-top: 20rem;
   display: flex;
@@ -406,6 +408,7 @@ body {
   font-weight: 500;
   line-height: 2.2rem;
   letter-spacing: 0.0015em;
+  padding-right: 6rem;
 }
 
 .shopping__right {
@@ -535,7 +538,7 @@ body {
   font-style: normal;
   line-height: 4.6rem;
   font-size: 3.5rem;
-  color: var(--dark-green);
+  color: var(--dark-blue);
   word-spacing: 0.4rem;
   font-weight: normal;
   text-align: center;

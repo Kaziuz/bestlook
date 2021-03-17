@@ -41,7 +41,7 @@ html {
 }
 
 body {
-  height: 6410px;
+  height: 6600px;
   background-image: linear-gradient(180deg, var(--pink-white), var(--dark-green-main-light-2));
 }
 
@@ -188,16 +188,18 @@ body {
 .header__button,
 .header__button:link,
 .header__button:visited {
-  width: 100%;
-  height: 6.5rem;
+  width: 70%;
+  height: 6rem;
   padding: 1.6rem 2.4rem 1.6rem 3rem;
   margin-top: 4.5rem;
   background-color: var(--main-green);
-  border: 1px solid var(--main-green);
+  border: 1px solid var(
+  --main-green);
   border-radius: 50px;
   text-align: center;
   color: white;
-  font-family: 'futura-medium', Arial, Helvetica, sans-serif;
+  font-family:
+  'futura-medium', Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 2rem;
   font-style: normal;
@@ -209,10 +211,11 @@ body {
 
 @media only screen and (min-width: 425px) { 
   .header__button {
-    height: 6.8rem;
+    height: 6rem;
     font-size: 2.2rem;
     letter-spacing: 0.1rem;
     margin-top: 5rem;
+    width: 60%;
   }
 }
 
@@ -657,7 +660,7 @@ body {
 
 .banner__content {
   width: 92%;
-  height: 47rem;
+  height: 52rem;
   background: rgba(255,255,255,0.6) no-repeat top;
   margin: 0 auto;
   padding: 10rem 2rem 3.8rem 2rem;
@@ -679,7 +682,7 @@ body {
   line-height: 5.7rem;
   font-size: 4.2rem;
   letter-spacing: .009em;
-  color: var(--dark-green);
+  color: var(--dark-blue);
   word-spacing: 0rem;
   margin-bottom: 4rem;
 }
@@ -707,7 +710,7 @@ body {
 .banner__button:link,
 .banner__button:visited {
   width: 100%;
-  height: 6.5rem;
+  height: 7rem;
   padding: 1.6rem 2.4rem 1.6rem 3rem;
   margin-top: 3.5rem;
   background-color: var(--main-green);
@@ -891,7 +894,8 @@ body {
 @media only screen and (min-width: 425px) { 
   .contact__button {
     height: 4.7rem;
-    width: 40%;
+    width: 49%;
+    font-size: 2rem;
   }
 }
 .contact__button:hover {
@@ -925,8 +929,8 @@ body {
 
 .contact__content__right {
   width: 90.8%;
-  height: 11rem;
-  padding: 1.6rem 2rem 0 2.5rem;
+  height: 14rem;
+  padding: 2rem 2rem 0 2.5rem;
   background: #FFF;
   margin: 0 auto;
 }
@@ -957,7 +961,7 @@ body {
 
 .footer__content {
   display: flex;
-  margin-left: 2rem;
+  margin-left: 2.2rem;
   width: 91%;
 }
 
@@ -965,7 +969,7 @@ body {
   flex: 0 1 50%;
   margin-top: 1.5rem;
   height: 15rem;
-  padding: 0 0px 0 0.5rem;
+  padding: 0 0px 0 1rem;
 }
 
 .footer__title {
