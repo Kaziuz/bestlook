@@ -45,6 +45,12 @@ body {
   background-image: linear-gradient(180deg, var(--pink-white), var(--dark-green-main-light-2));
 }
 
+@media only screen and (min-width: 425px) {
+  body {
+    height: 7600px;
+  }
+}
+
 .navigator {
   width: 88%;
   height: 9rem;
