@@ -249,7 +249,7 @@ body {
 }
 
 .welcome__section {
-  width: 24%;
+  width: 22%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -305,7 +305,7 @@ body {
   margin-top: 3rem;
   letter-spacing: 0.0015em;
   height: 10rem;
-  word-spacing: 0.5rem;
+  text-align: justify;
 }
 
 .welcome__section:nth-child(3) .welcome__section__subtitle {
@@ -389,11 +389,10 @@ body {
   font-family: 'bodoni-regular';
   font-size: 3.9rem;
   color: var(--dark-green);
-  word-spacing: 0.5rem;
   font-style: normal;
   font-weight: normal;
   line-height: 4.6rem;
-  letter-spacing: -0.3rem;
+  letter-spacing: 0.0025em;
 }
 
 .shopping__left__description {
@@ -445,7 +444,7 @@ body {
   width: 74%;
   height: 44rem;
   margin-left: var(--margin-left-rule);
-  margin-top: 8vw;
+  margin-top: 54vw;
   /* border: 1px solid black; */
 }
 
@@ -456,7 +455,7 @@ body {
   font-style: normal;
   line-height: 4.6rem;
   font-size: 3.9rem;
-  letter-spacing: -0.05rem;
+  letter-spacing: 0.0025em;
   color: var(--dark-green);
 }
 
@@ -498,12 +497,12 @@ body {
   font-style: normal;
   font-size: 1.7rem;
   line-height: 146%;
-  letter-spacing: -0.011rem;
+  letter-spacing: 0.0015em;
   color: var(--text-color);
-  word-spacing: 0.3rem;
   margin-top: 1.8vw;
   padding: 0px 0.2vw;
   height: 17rem;
+  text-align: justify;
 }
 
 .banner {

@@ -511,6 +511,7 @@ body {
   margin-top: 1.8vw;
   padding: 0px 0.2vw;
   height: 17rem;
+  text-align: left;
 }
 
 .banner {
@@ -706,10 +707,10 @@ body {
 .contact__button,
 .contact__button:link,
 .contact__button:visited {
-  width: 75%;
-  height: 4.2rem;
+  width: 84%;
+  height: 4rem;
   padding: .4rem 0;
-  border: .1rem solid var(--main-green);
+  border: 1px solid var(--main-green);
   border-radius: 3.2rem;
   background: transparent;
   text-align: center;
@@ -724,7 +725,7 @@ body {
   line-height: 2.3rem;
 /* identical to box height */
   letter-spacing: 0.035em;
-  margin-left: 4rem;
+  margin-left: 1rem;
 }
 
 .contact__button:hover {

@@ -76,7 +76,7 @@ body {
   align-items: center;
 }
 
-.navigator__content__text__left {
+.navigator__content__text__right {
   font-family: "futura-medium", Arial, Helvetica, sans-serif;
   font-size: 1.4rem;
   font-style: normal;
@@ -95,7 +95,7 @@ body {
   display: flex; 
 }
 
-.navigator__content__text a:nth-child(2) {
+.navigator__content__text a:nth-child(1) {
   display: none; 
 }
 
@@ -194,8 +194,8 @@ body {
 .header__button,
 .header__button:link,
 .header__button:visited {
-  width: 70%;
-  height: 6rem;
+  width: 100%;
+  height: 6.5rem;
   padding: 1.6rem 2.4rem 1.6rem 3rem;
   margin-top: 4.5rem;
   background-color: var(--main-green);
@@ -217,11 +217,11 @@ body {
 
 @media only screen and (min-width: 425px) { 
   .header__button {
-    height: 6rem;
+    height: 8rem;
     font-size: 2.2rem;
     letter-spacing: 0.1rem;
     margin-top: 5rem;
-    width: 60%;
+    width: 100%;
   }
 }
 
@@ -884,7 +884,7 @@ body {
 .contact__button:link,
 .contact__button:visited {
   width: 52%;
-  height: 10.2vw;
+  height: 9vw;
   padding: .4rem .8rem;
   border: .1rem solid var(--main-green);
   border-radius: 3.2rem;
