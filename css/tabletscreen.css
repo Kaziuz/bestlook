@@ -23,7 +23,7 @@
   --pink-white:#FEF7F2;
   --mustard: #E9E4C2;
   --text-color: #494e50;
-  --margin-left-rule: 15rem;
+  --margin-left-rule: 10rem;
 }
 
 *,
@@ -44,25 +44,25 @@ body {
 }
 
 .navigator {
-  width: 90%;
-  height: 8vw;
+  width: 80%;
+  height: 16vw;
   display: flex;
+  flex-direction: row;
   align-items: center;
-  background-color: red;
+  /* background-color: red; */
+  margin-left: var(--margin-left-rule);
 }
 
 .navigator__content {
-  flex: 0 0 63%;
+  width: 74%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  position: relative;
+  /* border: 1px solid black; */
 }
 
-.navigator__content__icon {
-  transform: scale(0.8);
-  margin-left: 10%;
-  margin-top: 1.5rem;
-}
+.navigator__content__icon {margin-left: -9rem;transform: scale(0.7);}
 
 .navigator__content__text {
   flex: 1 0 auto;
@@ -71,10 +71,32 @@ body {
   flex-direction: row;
 }
 
+.navigator__content__sm {
+  position: absolute;
+  font-family: "futura-medium", Arial, Helvetica, sans-serif;
+  font-size: 0.7rem;
+  font-weight: 500;
+  line-height: 1.9rem;
+  text-decoration: none;
+  letter-spacing: 0.035em;
+  color: var(--dark-blue);
+  left: 9.8rem;
+  bottom: 4.5rem;
+}
+
+.navigator__content__text {
+  width: 26%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  /* border: 1px solid black; */
+  margin-left: 0;
+}
+
 .navigator__content__text__left,
 .navigator__content__text__right {
   font-family: "futura-medium", Arial, Helvetica, sans-serif;
-  font-size: 1.4rem;
+  font-size: 14px;
   font-weight: 500;
   line-height: 1.9rem;
   text-decoration: none;
@@ -87,40 +109,39 @@ body {
 .navigator__icon__small { display: none;}
 
 .header {
-  width: 79%;
+  width: 80%;
   margin-left: var(--margin-left-rule);
-  margin-top: 9rem;
+  margin-top: 6vw;
   display: flex;
-  height: 50rem;
+  height: 73rem;
   flex-direction: row;
   justify-content: space-between;
+  /* border: 1px solid black; */
 }
 
 .header__left {
   width: 60%;
-  padding-right: 4rem;
+  padding-right: 7vw;
   /* border: 1px solid black; */
 }
 
 .header__left__title {
   font-family: 'bodoni-regular';
-  line-height: 5.3rem;
-  font-size: 4.4rem;
+  line-height: 5rem;
+  font-size: 34px;
   color: var(--dark-blue);
   letter-spacing: -0.0945rem;
   font-style: normal;
   font-weight: normal;
-  word-spacing: 0rem;
 }
 
 .header__left__description {
   font-family: 'futura-medium';
   font-style: normal;
-  font-size: 1.7rem;
+  font-size: 17px;
   color: var(--text-color);
-  margin-top: 2rem;
+  margin-top: 6rem;
   font-weight: 500;
-  word-spacing: 0.2rem;
   line-height: 146.1%;
   letter-spacing: 0.0015em;
   padding-right: 11rem;
@@ -131,16 +152,17 @@ body {
 .header__right {
   width: 40%;
   position: relative;
-  top: 1rem;
-  /* border: 1px solid black; */
-  right: 8rem;
-  transform: scale(0.6);
+  /* top: 1rem; */
 }
 
 .header__right__image {
+  width: 100%;
+  height: auto;
   position: absolute;
   outline-offset: 1rem;
   transition: all .2s;
+  filter: saturate(0.7);
+  --webkit-filter: saturate(.7);
 }
 
 .header__right__image:hover {
@@ -152,26 +174,37 @@ body {
 }
 
 .header__image__1 {
-  left: -3.6rem;
-  top: -2.5rem;
+  max-width: 70%;
+  /* max-width: 227.32px; */
+  height: auto;
+  left: -7vw;
+  top: -0.5rem;
   z-index: 1;
 }
 
 .header__image__2 {
-  left: 22.2rem;
-  top: -1rem;
+  max-width: 47%;
+  height: auto;
+  left: 17vw;
+  top: 1.2vw;
   z-index: 1;
+  filter: saturate(0.7);
+  --webkit-filter: saturate(.7);
 }
 
 .header__image__3 {
-  left: 1.5rem;
-  top: 21.5rem;
+  max-width: 45%;
+  height: auto;
+  left: -3vw;
+  top: 23vw;
   z-index: 2;
 }
 
 .header__image__4 {
-  left: 18rem;
-  top: 15rem;
+  max-width: 61.4%;
+  height: auto;
+  left: 13.4vw;
+  top: 16vw;
   z-index: 4;
 }
 
@@ -179,12 +212,11 @@ body {
 .header__button:link,
 .header__button:visited {
   width: 67%;
-  height: 4.3rem;
+  height: 5.2rem;
   padding: .4rem 0;
   background-color: var(--main-green);
   border-radius: 3.2rem;
-  border: 1px solid var(
-  --main-green);
+  border: 1px solid var(--main-green);
   text-align: center;
   color: white;
   font-family:
@@ -194,7 +226,7 @@ body {
   letter-spacing: 0.058rem;
   margin-top: 4.5rem;
   cursor: pointer;
-  font-size: 1.7rem;
+  font-size: 17px;
   transition: all .2s;
 }
 
@@ -229,17 +261,17 @@ body {
 
 .welcome {
   width: 98%;
-  margin-top: 50%;
+  /* background: red; */
   padding: 1.5rem 0rem 1.5rem 5.5rem;
 }
 
 .welcome__title {
   font-family: 'bodoni-regular';
   font-style: normal;
-  font-size: 3.9rem;
-  line-height: 4.6rem;
   color: var(--dark-green);
   font-weight: normal;
+  font-size: 39px;
+  line-height: 46px;
   letter-spacing: 0.0025em;
 }
 
@@ -283,30 +315,28 @@ body {
 
 .welcome__section__subtitle {
   font-family: 'futura-medium';
-  font-weight: 500;
   font-style: normal;
-  font-size: 2rem;
   color: var(--dark-blue);
-  text-align: center;
   margin-top: 3rem;
-  line-height: 2.9rem;
-  word-spacing: 0rem;
   text-align: center;
   letter-spacing: 0.0015em;
   height: 6rem;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 29px;
 }
 
 .welcome__section__description {
   font-family: 'futura-medium';
-  font-weight: 500;
   font-style: normal;
-  font-size: 1.4rem;
-  line-height: 1.9rem;
   color: var(--text-color);
-  margin-top: 3rem;
-  letter-spacing: 0.0015em;
+  margin-top: 7rem;
   height: 10rem;
   text-align: justify;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 146.1%;
+  letter-spacing: 0.0015em;
 }
 
 .welcome__section:nth-child(3) .welcome__section__subtitle {
@@ -331,12 +361,12 @@ body {
 
 .brands__title {
   font-family: 'bodoni-regular';
-  font-size: 3.9rem;
-  line-height: 4.6rem;
   color: var(--dark-green);
-  text-align: center;
   font-style: normal;
   font-weight: normal;
+  font-size: 39px;
+  line-height: 46px;
+  text-align: center;
   letter-spacing: 0.0025em;
 }
 
@@ -388,11 +418,11 @@ body {
 .shopping__left__title {
   width: 84%;
   font-family: 'bodoni-regular';
-  font-size: 3.9rem;
   color: var(--dark-green);
   font-style: normal;
   font-weight: normal;
-  line-height: 4.6rem;
+  font-size: 39px;
+  line-height: 46px;
   letter-spacing: 0.0025em;
 }
 
@@ -401,14 +431,14 @@ body {
   margin-top: 3.5vw;
   font-family: 'futura-medium';
   font-style: normal;
-  font-size: 1.7rem;
   color: var(--text-color);
   font-weight: 500;
-  word-spacing: 0.3rem;
+  font-size: 17px;
   font-weight: 500;
-  line-height: 2.2rem;
+  line-height: 146.1%;
   letter-spacing: 0.0015em;
   padding-right: 6rem;
+  text-align: left;
 }
 
 .shopping__right {
@@ -454,8 +484,8 @@ body {
   font-family: 'bodoni-regular';
   font-weight: normal;
   font-style: normal;
-  line-height: 4.6rem;
-  font-size: 3.9rem;
+  line-height: 46px;
+  font-size: 39px;
   letter-spacing: 0.0025em;
   color: var(--dark-green);
 }
@@ -469,7 +499,7 @@ body {
 }
 
 .comments__section {
-  width: 30%;
+  width: 29.5%;
   display: flex;
   flex-direction: column;
 }
@@ -482,28 +512,28 @@ body {
 
 .comments__subtitle {
   font-family: 'futura-medium';
-  font-weight: 500;
   font-style: normal;
-  letter-spacing: .015rem;
-  font-size: 2.2rem;
   color: var(--dark-blue);
-  text-align: center;
   margin-top: 3rem;
-  line-height: 3rem;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: 0.0015em;
 }
 
 .comments__description {
   font-family: 'futura-medium';
-  font-weight: 500;
   font-style: normal;
-  font-size: 1.7rem;
-  line-height: 146%;
-  letter-spacing: 0.0015em;
   color: var(--text-color);
   margin-top: 1.8vw;
   padding: 0px 0.2vw;
   height: 17rem;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 146.1%;
   text-align: justify;
+  letter-spacing: 0.0015em;
 }
 
 .banner {
@@ -520,10 +550,10 @@ body {
 
 .banner__content {
   width: 63%;
-  height: 29rem;
+  height: 29vw;
   background: url(../image/closet-1.png) no-repeat top;
   margin: 0 auto;
-  padding: 6rem 0.5rem 1.8rem 0.5rem;
+  padding: 3rem 0.5rem 1.8rem 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -536,11 +566,10 @@ body {
   width: 100%;
   font-family: 'bodoni-regular';
   font-style: normal;
-  line-height: 4.6rem;
-  font-size: 3.5rem;
   color: var(--dark-blue);
-  word-spacing: 0.4rem;
   font-weight: normal;
+  font-size: 28px;
+  line-height: 40px;
   text-align: center;
   letter-spacing: 0.0025em;
 }
@@ -557,13 +586,14 @@ body {
   text-align: center;
   color: white;
   font-family: 'futura-medium', Arial, Helvetica, sans-serif;
-  font-weight: 500;
   font-style: normal;
   letter-spacing: 0.058rem;
   margin-top: 2.5rem;
   cursor: pointer;
-  font-size: 1.7rem;
   transition: all .2s;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 23px;
 }
 
 .banner__button:hover {
@@ -632,13 +662,12 @@ body {
 
 .contact__content__title {
   font-family: 'futura-medium';
-  font-weight: 500;
   font-style: normal;
-  font-size: 1.7rem;
   color: var(--dark-blue);
+  font-weight: 500;
+  font-size: 17px;
   line-height: 146.1%;
-/* or 25px */
-  letter-spacing: 0.0015em;
+  letter-spacing: 0.0035em;
 }
 
 .contact__subcontent__label {
@@ -689,20 +718,17 @@ body {
   color: var(--text-color);
   word-spacing: 0.2rem;
   margin-bottom: 2rem;
-
-/* /Body 1 BL */
   line-height: 2.5rem;
-/* or 25px */
   letter-spacing: 0.0015em;
 }
 
 .contact__button,
 .contact__button:link,
 .contact__button:visited {
-  width: 75%;
-  height: 4.2rem;
+  width: 84%;
+  height: 4rem;
   padding: .4rem 0;
-  border: .1rem solid var(--main-green);
+  border: 1px solid var(--main-green);
   border-radius: 3.2rem;
   background: transparent;
   text-align: center;
@@ -713,11 +739,10 @@ body {
   margin-top: 3.6rem;
   transition: all .2s;
   font-style: normal;
-  font-size: 1.5rem;
+  font-size: 14px;
   line-height: 2.3rem;
-/* identical to box height */
   letter-spacing: 0.035em;
-  margin-left: 4rem;
+  margin-left: 1rem;
 }
 
 .contact__button:hover {
@@ -799,7 +824,7 @@ body {
   font-family: 'futura-medium';
   font-weight: 500;
   font-style: normal;
-  font-size: 1.5rem;
+  font-size: 17px;
   line-height: 3.5rem;
   letter-spacing: 0.05rem;
   color: var(--dark-blue);
@@ -816,7 +841,7 @@ body {
   font-family: 'futura-medium';
   font-weight: 500;
   font-style: normal;
-  font-size: 1.4rem;
+  font-size: 14px;
   line-height: 2.5rem;
   letter-spacing: 0.05rem;
   text-decoration: none;
@@ -838,7 +863,7 @@ body {
   font-family: 'futura-medium';
   font-weight: 500;
   font-style: normal;
-  font-size: 1.5rem;
+  font-size: 17px;
   line-height: 1.38rem;
   letter-spacing: 0.05rem;
   color: var(--text-color);
