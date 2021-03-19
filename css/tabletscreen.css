@@ -279,6 +279,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 6rem;
+  padding-right: 4.3vw;
 }
 
 .welcome__section {
