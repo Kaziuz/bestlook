@@ -44,39 +44,56 @@ body {
 }
 
 .navigator {
-  width: 100%;
+  width: 80%;
+  margin-left: var(--margin-left-rule);
   height: 8vw;
   display: flex;
+  flex-direction: row;
   align-items: center;
   /* border: 1px solid black; */
 }
 
 .navigator__content {
-  flex: 0 0 64%;
+  width: 74%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   /* border: 1px solid black; */
+  position: relative;
 }
 
 .navigator__content__icon {
   transform: scale(0.8);
-  margin-left: 8.6rem;
+  margin-left: -9rem;
   margin-top: 1.5rem;
 }
 
+.navigator__content__sm {
+  position: absolute;
+  font-family: "futura-medium", Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.9rem;
+  text-decoration: none;
+  letter-spacing: 0.035em;
+  color: var(--dark-blue);
+  left: 11rem;
+  bottom: 5rem;
+}
+
 .navigator__content__text {
-  flex: 1 0 30%;
+  width: 26%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: row;
   /* border: 1px solid black; */
+  margin-left: 0;
 }
 
 .navigator__content__text__left,
 .navigator__content__text__right {
   font-family: "futura-medium", Arial, Helvetica, sans-serif;
-  font-size: 1.4rem;
+  font-size: 14px;
   font-weight: 500;
   line-height: 1.9rem;
   text-decoration: none;
@@ -96,33 +113,31 @@ body {
   height: 50rem;
   flex-direction: row;
   justify-content: space-between;
-  /* background: red; */
+  /* border: 1px solid black; */
 }
 
 .header__left {
   width: 60%;
-  padding-right: 4rem;
+  padding-right: 7vw;
 }
 
 .header__left__title {
   font-family: 'bodoni-regular';
   line-height: 6rem;
-  font-size: 4.6rem;
+  font-size: 55px;
   color: var(--dark-blue);
   letter-spacing: -0.0945rem;
   font-style: normal;
   font-weight: normal;
-  word-spacing: 0.5rem;
 }
 
 .header__left__description {
   font-family: 'futura-medium';
   font-style: normal;
-  font-size: 1.7rem;
+  font-size: 17px;
   color: var(--text-color);
   margin-top: 6rem;
   font-weight: 500;
-  word-spacing: 0.2rem;
   line-height: 146.1%;
   letter-spacing: 0.0015em;
   padding-right: 11rem;
@@ -133,17 +148,19 @@ body {
 .header__right {
   width: 40%;
   position: relative;
-  top: 1rem;
+  /* top: 1rem; */
 }
 
 @media only screen and (min-width: 1400px) { 
   .header__right {
-    /* background-color: #073042; */
-    left: 8vw;
+    background-color: #07304282;
+    /* left: 8vw; */
   }
 }
 
 .header__right__image {
+  width: 100%;
+  height: auto;
   position: absolute;
   outline-offset: 1rem;
   transition: all .2s;
@@ -158,26 +175,35 @@ body {
 }
 
 .header__image__1 {
-  left: -3.6rem;
-  top: -2.5rem;
+  width: 70%;
+  /* max-width: 227.32px; */
+  height: auto;
+  left: -7vw;
+  top: -0.5rem;
   z-index: 1;
 }
 
 .header__image__2 {
-  left: 22.2rem;
-  top: -1rem;
+  width: 47%;
+  height: auto;
+  left: 17vw;
+  top: 1vw;
   z-index: 1;
 }
 
 .header__image__3 {
-  left: 1.5rem;
-  top: 21.5rem;
+  width: 45%;
+  height: auto;
+  left: -3.6vw;
+  top: 23vw;
   z-index: 2;
 }
 
 .header__image__4 {
-  left: 18rem;
-  top: 15rem;
+  width: 61.4%;
+  height: auto;
+  left: 13.4vw;
+  top: 16vw;
   z-index: 4;
 }
 
@@ -199,7 +225,7 @@ body {
   letter-spacing: 0.058rem;
   margin-top: 4.5rem;
   cursor: pointer;
-  font-size: 1.7rem;
+  font-size: 17px;
   transition: all .2s;
 }
 
@@ -234,17 +260,17 @@ body {
 
 .welcome {
   width: 98%;
-  margin-top: 6.5%;
+  margin-top: 23.5vw;
   padding: 1.5rem 0rem 1.5rem 5.5rem;
 }
 
 .welcome__title {
   font-family: 'bodoni-regular';
   font-style: normal;
-  font-size: 3.9rem;
-  line-height: 4.6rem;
   color: var(--dark-green);
   font-weight: normal;
+  font-size: 39px;
+  line-height: 46px;
   letter-spacing: 0.0025em;
 }
 
@@ -288,31 +314,28 @@ body {
 
 .welcome__section__subtitle {
   font-family: 'futura-medium';
-  font-weight: 500;
   font-style: normal;
-  font-size: 2rem;
   color: var(--dark-blue);
-  text-align: center;
   margin-top: 3rem;
-  line-height: 2.9rem;
-  word-spacing: 0rem;
   text-align: center;
   letter-spacing: 0.0015em;
   height: 6rem;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 29px;
 }
 
 .welcome__section__description {
   font-family: 'futura-medium';
-  font-weight: 500;
   font-style: normal;
-  font-size: 1.4rem;
-  line-height: 1.9rem;
   color: var(--text-color);
   margin-top: 2rem;
-  letter-spacing: 0.0015em;
   height: 10rem;
-  word-spacing: 0.5rem;
   text-align: justify;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 146.1%;
+  letter-spacing: 0.0015em;
 }
 
 .welcome__section:nth-child(3) .welcome__section__subtitle {
@@ -337,19 +360,19 @@ body {
 
 .brands__title {
   font-family: 'bodoni-regular';
-  font-size: 3.9rem;
-  line-height: 4.6rem;
   color: var(--dark-green);
-  text-align: center;
   font-style: normal;
   font-weight: normal;
+  font-size: 39px;
+  line-height: 46px;
+  text-align: center;
   letter-spacing: 0.0025em;
 }
 
 .brands__container__1 {
   width: 89%;
   margin: 0 auto;
-  padding-top: 4.5vw;
+  padding-top: 5.5vw;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -393,11 +416,11 @@ body {
 .shopping__left__title {
   width: 84%;
   font-family: 'bodoni-regular';
-  font-size: 3.9rem;
   color: var(--dark-green);
   font-style: normal;
   font-weight: normal;
-  line-height: 4.6rem;
+  font-size: 39px;
+  line-height: 46px;
   letter-spacing: 0.0025em;
 }
 
@@ -406,16 +429,17 @@ body {
   margin-top: 3.5vw;
   font-family: 'futura-medium';
   font-style: normal;
-  font-size: 1.7rem;
   color: var(--text-color);
   font-weight: 500;
-  word-spacing: 0.3rem;
-  font-weight: 500;
-  line-height: 2.2rem;
+  
+  
 /* or 25px */
-  letter-spacing: 0.0015em;
   padding-right: 10rem;
   text-align: justify;
+  font-size: 17px;
+  line-height: 146.1%;
+/* or 25px */
+  letter-spacing: 0.0015em;
 }
 
 .shopping__right {
@@ -460,10 +484,10 @@ body {
   font-family: 'bodoni-regular';
   font-weight: normal;
   font-style: normal;
-  line-height: 4.6rem;
-  font-size: 3.9rem;
   color: var(--dark-green);
   text-align: justify;
+  font-size: 39px;
+  line-height: 46px;
   letter-spacing: 0.0025em;
 }
 
@@ -489,29 +513,29 @@ body {
 
 .comments__subtitle {
   font-family: 'futura-medium';
-  font-weight: 500;
   font-style: normal;
-  letter-spacing: .015rem;
-  font-size: 2.2rem;
   color: var(--dark-blue);
-  text-align: center;
   margin-top: 3rem;
-  line-height: 3rem;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: 0.0015em;
 }
 
 .comments__description {
   font-family: 'futura-medium';
-  font-weight: 500;
   font-style: normal;
-  font-size: 1.7rem;
-  line-height: 146%;
-  letter-spacing: -0.011rem;
   color: var(--text-color);
-  word-spacing: 0.3rem;
   margin-top: 1.8vw;
   padding: 0px 0.2vw;
   height: 17rem;
-  text-align: left;
+  text-align: justify;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 146.1%;
+/* or 25px */
+  letter-spacing: 0.0015em;
 }
 
 .banner {
@@ -544,11 +568,10 @@ body {
   width: 100%;
   font-family: 'bodoni-regular';
   font-style: normal;
-  line-height: 4.6rem;
-  font-size: 3.5rem;
   color: var(--dark-blue);
-  word-spacing: 0.4rem;
   font-weight: normal;
+  font-size: 39px;
+  line-height: 46px;
   text-align: center;
   letter-spacing: 0.0025em;
 }
@@ -565,13 +588,14 @@ body {
   text-align: center;
   color: white;
   font-family: 'futura-medium', Arial, Helvetica, sans-serif;
-  font-weight: 500;
   font-style: normal;
   letter-spacing: 0.058rem;
   margin-top: 2.5rem;
   cursor: pointer;
-  font-size: 1.7rem;
   transition: all .2s;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 23px;
 }
 
 .banner__button:hover {
@@ -640,13 +664,15 @@ body {
 
 .contact__content__title {
   font-family: 'futura-medium';
-  font-weight: 500;
   font-style: normal;
-  font-size: 1.7rem;
   color: var(--dark-blue);
+  
+/* or 25px */
+  font-weight: 500;
+  font-size: 17px;
   line-height: 146.1%;
 /* or 25px */
-  letter-spacing: 0.0015em;
+  letter-spacing: 0.0035em;
 }
 
 .contact__subcontent__label {
@@ -721,7 +747,7 @@ body {
   margin-top: 3.6rem;
   transition: all .2s;
   font-style: normal;
-  font-size: 1.7rem;
+  font-size: 14px;
   line-height: 2.3rem;
 /* identical to box height */
   letter-spacing: 0.035em;
@@ -807,7 +833,7 @@ body {
   font-family: 'futura-medium';
   font-weight: 500;
   font-style: normal;
-  font-size: 1.5rem;
+  font-size: 17px;
   line-height: 3.5rem;
   letter-spacing: 0.05rem;
   color: var(--dark-blue);
@@ -824,7 +850,7 @@ body {
   font-family: 'futura-medium';
   font-weight: 500;
   font-style: normal;
-  font-size: 1.4rem;
+  font-size: 14px;
   line-height: 2.5rem;
   letter-spacing: 0.05rem;
   text-decoration: none;
@@ -846,7 +872,7 @@ body {
   font-family: 'futura-medium';
   font-weight: 500;
   font-style: normal;
-  font-size: 1.5rem;
+  font-size: 17px;
   line-height: 1.38rem;
   letter-spacing: 0.05rem;
   color: var(--text-color);

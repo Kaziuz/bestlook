@@ -44,10 +44,11 @@ body {
 }
 
 .navigator {
-  width: 100%;
+  width: 90%;
   height: 8vw;
   display: flex;
   align-items: center;
+  background-color: red;
 }
 
 .navigator__content {
